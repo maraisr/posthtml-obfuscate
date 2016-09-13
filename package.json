@@ -4,7 +4,7 @@
   "description": "PostHTML plugin that'll obfuscate emails etc...",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./test/index.spec.js --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/maraisr/posthtml-obfuscate/issues"
   },
-  "homepage": "https://github.com/maraisr/posthtml-obfuscate#readme"
+  "homepage": "https://github.com/maraisr/posthtml-obfuscate#readme",
+  "devDependencies": {
+    "jest": "^15.1.1",
+    "posthtml": "^0.9.0"
+  }
 }
