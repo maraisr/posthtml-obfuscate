@@ -15,4 +15,14 @@ it('leaves other anchors', () => {
 		.then((r) => {
 			expect(r.html).toEqual('<a href="sam@smith.com">sam@smith.com</a>');
 		});
-})
+});
+
+it('includes the mailto', () => {
+	return posthtml([plugin({
+		includeMailto: true
+	})])
+		.process('<a href="mailto:sam@smith.com">sam@smith.com</a>')
+		.then((r) => {
+			expect(r.html).toEqual('<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#109;&#64;&#115;&#109;&#105;&#116;&#104;&#46;&#99;&#111;&#109;">&#115;&#97;&#109;&#64;&#115;&#109;&#105;&#116;&#104;&#46;&#99;&#111;&#109;</a>');
+		});
+});
