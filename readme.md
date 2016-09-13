@@ -1,4 +1,4 @@
-# PostHTML
+# PostHTML Obfuscate
 
 [![NPM version](https://img.shields.io/npm/v/posthtml-obfuscate.svg?style=flat-square)](https://www.npmjs.com/package/posthtml-obfuscate)
 
@@ -7,22 +7,6 @@ Obfuscates emails to make it harder for bots to recognize emails.
 ### Install
 ```sh
 npm i posthtml-obfuscate -D
-```
-
-## Usage
-```js
-const posthtml = require('posthtml');
-const phObfuscate= require('posthtml-obfuscate');
-
-const options = {
-	includeMailto: false
-};
-
-posthtml([phObfuscate(options)])
-	.process(myHtml)
-	.then(result => {
-		console.log(result.html); // The output
-	});
 ```
 
 ### Output
@@ -38,6 +22,21 @@ posthtml([phObfuscate(options)])
 </a>
 ```
 
+### Usage
+```js
+const posthtml = require('posthtml');
+const phObfuscate= require('posthtml-obfuscate');
+
+const options = {
+	includeMailto: false
+};
+
+posthtml([phObfuscate(options)])
+	.process(myHtml)
+	.then(result => {
+		console.log(result.html); // The output
+	});
+```
 
 ### Options
-- includeMailto: Boolean - Includes the `mailto:` prefix in the obfuscation. (Default: false)
+- `includeMailto`: Boolean - Includes the `mailto:` prefix in the obfuscation. (Default: false)
