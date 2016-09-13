@@ -2,7 +2,7 @@
   "name": "posthtml-obfuscate",
   "version": "0.1.2",
   "description": "PostHTML plugin that'll obfuscate emails etc...",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest --coverage"
   },
