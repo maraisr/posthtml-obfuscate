@@ -4,7 +4,7 @@
   "description": "PostHTML plugin that'll obfuscate emails etc...",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest ./test/index.spec.js --coverage"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
