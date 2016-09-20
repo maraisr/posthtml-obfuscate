@@ -1,6 +1,6 @@
 {
   "name": "posthtml-obfuscate",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "PostHTML plugin that'll obfuscate emails etc...",
   "main": "lib/index.js",
   "scripts": {
