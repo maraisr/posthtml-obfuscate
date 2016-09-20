@@ -1,8 +1,10 @@
 # PostHTML Obfuscate
 
 [![NPM version](https://img.shields.io/npm/v/posthtml-obfuscate.svg?style=flat-square)](https://www.npmjs.com/package/posthtml-obfuscate)
+[![Travis](https://img.shields.io/travis/maraisr/posthtml-obfuscate.svg?style=flat-square)](https://travis-ci.org/maraisr/posthtml-obfuscate)
+[![Codecov](https://img.shields.io/codecov/c/github/maraisr/posthtml-obfuscate.svg?style=flat-square)](https://codecov.io/github/maraisr/posthtml-obfuscate)
 
-Obfuscates emails to make it harder for bots to recognize emails.
+Obfuscates emails to make it harder for bots to recognize.
 
 ### Install
 ```sh
