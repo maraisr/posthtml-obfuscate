@@ -4,7 +4,8 @@
   "description": "PostHTML plugin that'll obfuscate emails etc...",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "prettier --single-quote --trailing-comma none --use-tabs --tab-width 4 \"{lib,__tests__}/**/*.js\" --write"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,9 @@
   },
   "homepage": "https://github.com/maraisr/posthtml-obfuscate#readme",
   "devDependencies": {
-    "codecov": "^1.0.1",
-    "jest": "^15.1.1",
-    "posthtml": "^0.9.0"
+    "codecov": "^2.2.0",
+    "jest": "^20.0.4",
+    "posthtml": "^0.9.0",
+    "prettier": "^1.5.2"
   }
 }

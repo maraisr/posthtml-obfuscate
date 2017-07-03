@@ -8,7 +8,7 @@ Obfuscates emails to make it harder for bots to recognize.
 
 ### Install
 ```sh
-npm i posthtml-obfuscate -D
+yarn add posthtml-obfuscate -D
 ```
 
 ### Output
